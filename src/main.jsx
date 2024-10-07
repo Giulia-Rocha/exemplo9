@@ -1,11 +1,11 @@
-import { Children, StrictMode } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import {CreateBrowserRouter, RouterProvider} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './routes/Home/Home.jsx'
 import Produto from './routes/Produto/Produto.jsx'
 
-const router = CreateBrowserRouter([{
+const router = createBrowserRouter([{
 
   path: "/", element: <App/>,
 
